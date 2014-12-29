@@ -7,11 +7,12 @@
 package 'git'
 
 application "openbay" do
-  path "/app/src/www"
+  path "/app/src"
   owner node[:apache][:user]
   group node[:apache][:user]
   repository "https://github.com/isohuntto/openbay.git"
   revision "master"
+
   # packages ["PDO","PDO_MYSQL"]
 
 
